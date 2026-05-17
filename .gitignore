@@ -1,0 +1,38 @@
+# ---- Terraform ----
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+tfplan
+*.tfplan
+# NOTE: .terraform.lock.hcl is intentionally NOT ignored — it pins provider
+# versions for reproducible builds and SHOULD be committed.
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# ---- Node / frontend (added in later phases) ----
+node_modules/
+
+# ---- Secrets / local config ----
+.env
+.env.*
+*.pem
+.aws/
+
+# ---- OS / editor noise ----
+.DS_Store
+.idea/
