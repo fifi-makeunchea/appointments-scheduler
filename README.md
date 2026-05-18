@@ -27,7 +27,7 @@ All infrastructure is defined in Terraform · Shipped by GitHub Actions via OIDC
 | API | API Gateway (HTTP API) |
 | Data | DynamoDB |
 | Frontend | Static SPA on S3 + CloudFront |
-| IaC | Terraform (remote state, S3 + DynamoDB lock) |
+| IaC | Terraform (S3 remote state, native locking) |
 | CI/CD | GitHub Actions (OIDC, no long-lived keys) |
 | Observability | CloudWatch metrics, alarms, structured logs |
 
